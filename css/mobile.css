@@ -1,0 +1,19 @@
+.KM, .forum div, .HD{
+    width: 100% !important;
+    flex-direction: column;
+}
+
+.forum div img{
+    width: 100%;
+}
+
+ul.tab >li >a{
+    padding: 10px 5px !important;
+    min-width: 80px !important;
+}
+
+.scroll-up, .light{
+    height: 45px !important;
+    width: 45px !important;
+}
+

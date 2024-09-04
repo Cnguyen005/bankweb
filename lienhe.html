@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Bank - Trang chủ</title>
+    <link href="images/logo.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="css/lienhe.css">
+    <link rel="stylesheet" href="css/decor.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px)"/>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/java.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <div class="mainlogo">
+            <a href="index.html">
+                <img src="images/main logo.png" alt="MB Bank">
+            </a>
+        </div>
+        <nav class="container">
+            <ul class="mainmenu flex">
+                <li><a id="trangchu" href="index.html"><i class="bi bi-house-fill"></i> Trang chủ</a></li>
+                <li><a id="gioi thieu" href="gioithieu.html">Giới thiệu</a></li>
+                <li><a id="dichvu" href="dichvu.html">Dịch vụ</a></li>
+                <li><a id="lienhe" href="lienhe.html">Liên hệ</a></li>
+                <li class="sub">
+                    <a href="#"><i class="bi bi-box-arrow-in-right"></i> Đăng nhập</a>
+                    <ul class="mainmenu subcontent">
+                        <li><a href="#"><i class="bi bi-person-fill"></i> Cá Nhân</a></li>
+                        <li><a href="#"><i class="bi bi-buildings-fill"></i> Doanh nghiệp</a></li>
+                   </ul>
+                </li>
+            </ul>
+        </nav>
+        <section class="find flex">
+            <input class="input-form" type="search" placeholder="🔍 Nhập từ khoá tìm kiếm...">
+        </section>
+    </header>
+    <main>
+        <a href="#" class="banner"><img style="width: 100%;" src="images/banner4.png" alt="banner"></a>
+        <h1 class="cap">LIÊN HỆ</h1>
+        <div class="para">
+            <p>Ngân hàng TMCP Quân Đội (MB) xin chân thành cảm ơn Quý khách hàng đã quan tâm và sử dụng sản phẩm dịch vụ của Ngân hàng chúng tôi trong thời gian qua.</p>
+            <p>Ngân hàng TMCP Quân Đội (MB) luôn hướng tới sự hoàn hảo trong mọi công tác phục vụ khách hàng. Chúng tôi luôn cố gắng xây dựng những nhịp cầu nối giữa Quý khách hàng với Ban lãnh đạo Ngân hàng để làm tốt điều đó.</p>
+            <p>Trong quá trình giao dịch, nếu Quý khách hàng có những ý kiến thắc mắc hoặc đóng góp về các sản phẩm dịch vụ cũng như chất lượng nghiệp vụ, tác phong và tinh thần phục vụ của nhân viên Ngân hàng TMCP Quân Đội (MB) ở bất cứ bộ phận, phòng ban nào, xin Quý khách hàng vui lòng gởi thông tin cho chúng tôi ngay tại trang web này. Yêu cầu của Quý khách sẽ được giải quyết trong 24 giờ làm việc. Mọi thông tin về khách hàng tại đây sẽ được bảo mật.</p>
+            <p>Những ý kiến đóng góp chân thành của Quý khách sẽ có ý nghĩa thiết thực cho quá trình không ngừng cải tiến sản phẩm dịch vụ và nâng cao chất lượng phục vụ của Ngân hàng Xây dựng.</p>
+            <p>Xin chân thành cảm ơn quý khách hàng!</p>
+        </div>
+
+    <form class="contact">
+        <table >
+            <tr>
+                <td><label for="name">Họ và tên</label></td>
+                <td><input type="text" placeholder="Nhập họ và tên" required> </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked>Nam
+                    <input type="radio" name="gender" value="female" >Nữ
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</lable></td>
+                <td><input type="email" placeholder="abc@gmail.com" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>Loại hình</td>
+                <td>
+                    <select name="kind" id="kind">
+                        <option value="Góp ý"> Góp ý</option>
+                        <option value="Thắc mắc">Thắc mắc</option>
+                        <option value="Khiếu nại">Khiếu nại</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="title">Tiêu đề</label></td>
+                <td><input type="text" required> </td>
+            </tr>
+            <tr>
+                <td>Nội dung</td>
+                </td>
+			<td style="width: 281px; height: 87px">
+                <textarea style="height:83px;width:170px;"></textarea>   
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                <button type="submit">
+                    Gửi
+                </button>
+                <button type="reset">
+                    Huỷ
+                </button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    <div class="hotline wow animate__headShake">
+        <h2 >Hotline</h2>
+        <p>1900 545426</p>
+        <p>(84-24)3767 4050 (quốc tế gọi về)</p>
+    </div>
+    </main>
+    <aside>
+        <ul class="socials">
+            <a href="#">
+                <li class="social flex">
+                    <div>Facebook</div>
+                    <i class="bi bi-facebook"></i>
+                </li>
+            </a>
+            <a href="#">
+                <li class="social flex">
+                    <div>Instagram</div>
+                    <i class="bi bi-instagram"></i>
+                </li>
+            </a>
+            <a href="">
+                <li class="social flex"> 
+                    <div>Twitter X</div>
+                    <i class="bi bi-twitter-x"></i>
+                </li>
+            </a>
+            <a href="#">
+                <li class="social flex">
+                    <div>WhatsApp</div> 
+                    <i class="bi bi-whatsapp"></i>
+                </li>
+            </a>
+        </ul>
+        <button class="scroll-up">
+            <i class="arrow-up"></i>
+        </button>
+        <button class="light">
+            <i class="bi bi-moon-stars-fill"></i>
+        </button>
+    </aside>
+    <footer>
+        <span class="footer">
+            Bản quyền &copy; 2024 thuộc về Ngân hàng Quân đội. Bảo lưu mọi quyền.
+        </span>
+    </footer>
+</body>
+</html>

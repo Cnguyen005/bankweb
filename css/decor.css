@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.mainlogo{
+    height: 100px;
+    margin: 12px auto 0;
+    text-align: center;
+}
+
+.mainlogo img{
+    height: 100%;
+}
+
+nav.container {
+    background-color: blue;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.mainmenu { 
+    background-color: blue; 
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.mainmenu > li{
+   text-align: center;
+   border-right: 1px solid white;
+}
+
+ul.mainmenu > li > a{
+    max-width: 100%;
+    background-color: blue;
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+ul.mainmenu > li:last-child{
+    margin-left: auto;
+    border-left: 1px solid white;
+}
+
+ul.mainmenu > li:first-child{
+    border-left: 1px solid white;
+}
+
+ul.mainmenu > li > a:hover{
+    background: linear-gradient(rgb(55, 194, 240),blue)
+}
+
+.subcontent {
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+ul.subcontent >li > a{
+    background-color: rgb(55, 194, 240);
+    text-align: left;
+}
+
+.sub:hover .subcontent {
+    display: block; 
+}
+
+.find > input{
+    margin: 0 auto;
+    margin-top: 2px;
+    width: 80%;
+    height: 30px;
+}
+
+.scroll-up{
+    position: fixed;
+    bottom: 36px;
+    right: 10px;
+    height: 55px;
+    width: 55px;
+    background-color: rgb(55, 194, 240);
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.active{
+    display: flex;
+    transition-duration: 1s;
+}
+
+.scroll-up .arrow-up{
+    width: 20px;
+    height: 20px;
+    border-left: 4px solid white;
+    border-bottom: 4px solid rgb(247, 227, 189);
+    transform: rotate(135deg);
+    margin-left: 3px;
+    margin-bottom: -12px;
+    pointer-events: none;
+}
+
+.scroll-up:hover{
+    opacity: 1;
+	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+  @keyframes slide-top {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+  }
+  
+.light{
+    position: fixed;
+    bottom: 110px;
+    right: 10px;
+    height: 55px;
+    width: 55px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.6;
+    color: rgb(226, 226, 187);
+}
+
+.light > i{
+    font-size: 26px;   
+}
+
+.day{
+    background-color: white;
+    color: rgb(241, 199, 11);
+}
+
+.light:hover{
+    opacity: 1;
+    animation: pulsate-bck 0.8s ease-in-out infinite both;
+}
+
+.night{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+@keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+ul.socials {
+    list-style-type: none;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 200px;
+    padding: 0;
+    z-index: 999;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+.socials > a > li{
+    color: white;
+    text-decoration: none;
+    border-radius: 0px 20px 20px 0px ;
+}
+
+.social{
+    background-color: rgb(55, 194, 240);
+    padding: 3px;
+    margin: 1px;
+    transform: translateX(-70%);
+    opacity: 0.7;
+}
+
+.social i{
+    width: 24px;
+    margin: 2px;
+    padding: 1px;
+    font-size: 20px;
+}
+
+li.social:hover{
+    opacity: 1;
+    transform: translateX(0%);
+    transition-duration: 1s;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*footer*/
+footer{
+        
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    padding: 4px;
+    background-color: blue;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+}
+
+footer > span{
+    background-color: blue;
+    animation: move linear 15s infinite;
+    position: relative ;
+}
+
+@keyframes move{
+    from{
+        left: -500px;
+    }
+    to{
+        left: 100%;
+    }
+}
