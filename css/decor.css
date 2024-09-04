@@ -176,7 +176,7 @@ ul.socials {
     list-style-type: none;
     margin: 0;
     position: fixed;
-    left: 0;
+    left: -72px;
     top: 200px;
     padding: 0;
     z-index: 999;
@@ -198,7 +198,6 @@ ul.socials {
     background-color: rgb(55, 194, 240);
     padding: 3px;
     margin: 1px;
-    transform: translateX(-70%);
     opacity: 0.7;
 }
 
@@ -211,7 +210,7 @@ ul.socials {
 
 li.social:hover{
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(72px);
     transition-duration: 1s;
 }
 
